@@ -5,7 +5,7 @@ from starlette.testclient import TestClient
 from .main import app
 
 
-class MyTestCase(unittest.TestCase):
+class TestEndPoint(unittest.TestCase):
     client: TestClient
     name: str
     user1: dict

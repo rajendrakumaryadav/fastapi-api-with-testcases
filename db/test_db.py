@@ -31,6 +31,13 @@ class TestDB(unittest.TestCase):
     def test_get_users(self):
         self.assertEqual(200, 200)
 
+    def test_delete_user(self):
+        self.db.session.query(curd.User).filter(curd.User.username == "admin1").delete()
+
+        # Check if user is deleted
+        self.assertEqual(len(self.db.session.query(curd.User)
+                             .filter(curd.User.username == "admin1").all()), 0)
+
 
 if __name__ == '__main__':
     unittest.main()
