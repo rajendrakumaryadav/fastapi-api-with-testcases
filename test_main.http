@@ -1,0 +1,21 @@
+# Test your FastAPI endpoints
+
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/hello/User
+Accept: application/json
+
+###
+
+POST http://localhost:8000/register
+Content-Encoding: gzip
+Content-Type: application/x-www-form-urlencoded
+
+username='User'&password='Password'
+
+### Get All Users
+GET http://localhost:8000/users
+Accept: application/json

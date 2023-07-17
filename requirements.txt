@@ -1,0 +1,5 @@
+sqlalchemy==2.0.19
+fastapi==0.100.0
+setuptools==67.8.0
+requests==2.26.0
+starlette==0.30.0
