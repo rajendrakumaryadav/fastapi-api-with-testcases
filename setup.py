@@ -9,20 +9,8 @@ author_email = "demo@demo.com"
 url = "https://fastapi.tiangolo.com/"
 license = "MIT"
 packages = ["api_project"]
-install_requires = [
-    "fastapi",
-    "uvicorn"
-]
-install_dev_requires = [
-    "pytest",
-    "pytest-asyncio",
-    "pytest-cov",
-    "pytest-mock",
-    "pytest-env",
-    "pytest-html",
-    "pytest-xdist",
-    "requests"
-]
+install_requires = []
+install_dev_requires = []
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
