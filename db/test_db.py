@@ -29,7 +29,8 @@ class TestDB(unittest.TestCase):
                              .filter(curd.User.username == "admin").all()), 1)
 
     def test_get_users(self):
-        self.assertEqual(200, 200)
+        users = self.db.session.query(curd.User).all()
+        self.assertGreaterEqual(len(users), 1)
 
     def test_delete_user(self):
         self.db.session.query(curd.User).filter(curd.User.username == "admin1").delete()
